@@ -1,0 +1,267 @@
+body {
+  box-sizing: border-box;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.main-nav {
+  margin: 10px 0px;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.main-nav-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-categories li {
+  margin-right: 45px;
+}
+
+.nav-categories li a {
+  text-decoration: none;
+  color: rgb(42, 42, 113);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-categories li a:hover {
+  color: rgb(255, 119, 71);
+}
+
+.hire-btn {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 2px solid rgb(255, 119, 71);
+  padding: 10px 50px;
+  color: rgb(255, 119, 71);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background-color: rgb(255, 119, 71);
+  color: #fff;
+  cursor: pointer;
+}
+
+#active {
+  color: rgb(255, 119, 71);
+}
+
+.main-header {
+  margin: 0 auto 350px auto;
+  position: relative;
+  height: 750px;
+}
+
+.main-header-inner {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.header-title {
+  max-width: 800px;
+}
+
+.header-title h3 {
+  color: rgb(255, 119, 71);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.h-2 {
+  color: rgb(42, 42, 113);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 20px 0px;
+  line-height: 60px;
+}
+
+.h-3 {
+  color: rgb(255, 119, 71);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.parag {
+  line-height: 30px;
+  color: rgb(115, 115, 115);
+  margin-bottom: 30px;
+}
+
+.header-title h1 {
+  color: rgb(42, 42, 113);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 20px 0px;
+  line-height: 60px;
+}
+
+.header-title p {
+  max-width: 400px;
+  line-height: 30px;
+  color: rgb(150, 156, 171);
+  margin-bottom: 30px;
+}
+
+.header-title label {
+  color: rgb(42, 42, 113);
+  font-weight: 700;
+}
+
+.header-title input {
+  border: none;
+  width: 250px;
+}
+
+.header-title .sign-btn {
+  color: #fff;
+  background-color: rgb(42, 42, 113);
+  padding: 15px 30px;
+  border-radius: 5px;
+  align-self: center;
+  font-weight: 600;
+  width: 130px;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.header-title .sign-btn:hover {
+  background-color: #fff;
+  color: rgb(42, 42, 113);
+  border: 1px solid rgb(42, 42, 113);
+  cursor: pointer;
+}
+
+.email-input-block {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 550px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 10px rgb(209, 209, 209);
+}
+
+.header-title input::placeholder {
+  color: rgb(150, 156, 171);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(205, 207, 211);
+}
+
+.header-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 1150px;
+}
+
+.header-bg img {
+  border-bottom-left-radius: 5px;
+  height: 100%;
+}
+
+.about-me {
+  width: 1400px;
+  margin: 0 auto 290px auto;
+  position: relative;
+}
+
+.about-me .top-circle {
+  position: absolute;
+  right: -20px;
+  top: -200px;
+}
+
+.about-me article {
+  width: 450px;
+  margin-bottom: 50px;
+}
+
+.about-me ul li {
+  margin-right: 50px;
+  text-align: justify;
+  width: 25%;
+}
+
+.about-me ul li:first-child {
+  width: 50%;
+}
+
+.about-me ul li:last-child {
+  margin-right: 0px;
+}
+
+.disc-serv {
+  position: relative;
+  top: -50px;
+}
+
+.disc-serv a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 119, 71);
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.disc-serv a:hover {
+  text-decoration: underline;
+}
+
+.about-me .bot-circle {
+  position: absolute;
+  left: -150px;
+  bottom: -350px;
+  z-index: -1;
+}
+
+.services {
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services ul li {
+  width: 25%;
+
+  margin: 10px;
+}
+
+.services ul li img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+}

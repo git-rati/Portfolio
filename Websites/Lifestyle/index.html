@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>press</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="top-container">
+		<nav class="top-nav clearfix">
+			<ul>
+	        	<li>
+                    <a href='#' id="active">Register</a>
+                </li>
+                <li>
+                    <a href='#'>Log In</a>
+                </li>
+                <li>
+                    <a href='#'>Entries Rss</a>
+                </li>
+                <li>
+                    <a href='#'>Comments Rss</a>
+                </li>
+                <li>
+                    <a href='#'>Wordpress Org</a>
+                </li>                              
+	        </ul>
+	        <form>
+	        	<input type="search" name="q" placeholder="Search...">
+	        	<button class="btn"><i class="fa fa-search"></i></button>
+	        </form>	        
+	    </nav> <!--/ nav off -->
+	    <div class="banner clearfix">
+	    	<div class="banner-1 left"><img src="imgs/logo.jpg"></div>
+	    	<div class="banner-2 right">550X68</div>
+	    </div>
+	</div> <!--/ top-container off -->
+
+	<div class="bot-container clearfix"> 
+		<nav class="bot-nav">
+			<ul class="clearfix">
+				<li>
+					<a href="#" id="pressed">Home</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Featured</a>
+				</li>
+				<li>
+					<a href="#">Gallery</a>
+				</li>
+				<li>
+					<a href="#">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="left-block left"> <!-- left-block on -->
+			
+			<div id="demo" class="carousel slide left" data-ride="carousel">
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="imgs/lifestyle.jpg" alt="Los Angeles">
+		      <div class="carousel-caption">
+		        <h3>Los Angeles</h3>
+		        <p>We had such a great time in LA!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="imgs/lifestyle2.jpg" alt="Chicago" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>Chicago</h3>
+		        <p>Thank you, Chicago!</p>
+		      </div>   
+		    </div>
+		    <div class="carousel-item">
+		      <img src="imgs/lifestyle3.jpg" alt="New York" width="1100" height="500">
+		      <div class="carousel-caption">
+		        <h3>New York</h3>
+		        <p>We love the Big Apple!</p>
+		      </div>   
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+
+		<div class="container left">
+		  <img src="imgs/img-6.jpg" alt="Avatar" class="image" style="width:100%">
+		  <div class="middle">
+		    <div class="text">Business</div>
+		  </div>		  
+			<h2 class="on">Sunt in culpa qui officia deserunt</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore<span class="on"> more...</span>
+			</p>			  
+		</div>
+		
+		<div class="container right">
+		  <img src="imgs/img-7.jpg" alt="Avatar" class="image" style="width:100%">
+		  <div class="middle">
+		    <div class="text">Lifestyle</div>
+		  </div>
+		  <h2>Sunt in culpa qui officia deserunt</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore<span class="on"> more...</span>
+			</p>		  
+		</div>
+		<div class="gallery-title">Latest</div>
+
+		<ul class="latest-gallery">
+			<li class="left">
+				<a href="">
+				<img src="imgs/pic1.jpg">
+				<button style="background-color: rgb(51, 51, 51);">Business</button>
+				<p class="on">Lorem ipsum dolor sit amet, consectetur...</p>
+				</a>
+			</li>
+			<li class="right"><a href="">
+				<img src="imgs/pic2.jpg">
+				<button>Lifestyle</button>
+				<p>Minim veniam,
+				quis nostrud exercitation ullamc...</p>
+				</a>
+			</li>
+			<li class="left"><a href="">
+				<img src="imgs/pic3.jpg">
+				<button>Sports</button>
+				<p>Ut enim ad minim veniam,
+				quis nostrud exercitation ullamc...</p>
+				</a>
+			</li>
+			<li class="right"><a href="">
+				<img src="imgs/pic4.jpg">
+				<button>Sciense</button>
+				<p>Ipsum dolor sit amet, consectetur...</p>
+				</a>
+			</li>
+			<li class="left"><a href="">
+				<img src="imgs/pic5.jpg">
+				<button>Medicine</button>
+				<p>Sint occaecat non
+				proident deserunt anim...</p>
+				</a>
+			</li>
+			<li class="right"><a href="">
+				<img src="imgs/pic6.png">
+				<button>Fashion</button>
+				<p>Sint occaecat non
+				proident deserunt anim...</p>
+				</a>
+			</li>
+		</ul>
+
+		<div class="see-all clearfix">
+			<a href="">
+				<h3>See all</h3>
+				<img src="imgs/arrow.png">					
+			</a>
+		</div>
+
+		<div class="gallery-title">Latest photos</div>
+
+		<ul class="latest-photos clearfix">
+			<li>
+				<div class="cont">
+				  <img src="imgs/pic7.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont">
+				  <img src="imgs/pic8.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont">
+				  <img src="imgs/pic9.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont" style="margin-right: -20px;">
+				  <img src="imgs/pic10.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont">
+				  <img src="imgs/pic11.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont">
+				  <img src="imgs/pic12.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont" >
+				  <img src="imgs/pic13.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="cont" style="margin-right: -20px;">
+				  <img src="imgs/pic14.jpg" alt="Avatar" class="pic">
+				  <div class="overlay">
+				    <div class="icon">Zoom</div>
+				  </div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="see-all clearfix" style="margin-bottom: 0;">
+			<a href="">
+				<h3>See all</h3>
+				<img src="imgs/arrow.png">					
+			</a>
+		</div>
+
+	</div> <!--/ left-block off -->
+	
+	<div class="right-block right"> <!-- right-block on -->
+		<ul class="banners-title clearfix">
+			<li><a href="#" id="clicked">Popular</a></li>
+			<li><a href="#">Latest</a></li>
+			<li><a href="#">Featured</a></li>
+		</ul>
+
+		<div class="banners-title-line">			
+		</div>
+
+		<ol class="banners">
+			<li class="clearfix">
+				<a href="">
+					<img src="imgs/img-1.png">
+					<p class="on">Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet... </p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="">
+					<img src="imgs/img-2.png">
+					<p>Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet... </p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="">
+					<img src="imgs/img-3.png">
+					<p>Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet... </p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="">
+					<img src="imgs/img-4.png">
+					<p>Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet... </p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="">
+					<img src="imgs/img-5.png">
+					<p>Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet... </p>
+				</a>
+			</li>			
+		</ol>
+		<div class="see-all clearfix">
+			<a href="">
+				<h3>See all</h3>
+				<img src="imgs/arrow.png">					
+			</a>
+		</div>
+		<div class="social">
+			<h2>Follow us</h2>
+			<ul class="social-menu clearfix">
+				<li><img src="imgs/twitter.png"><a href="#"><p>27655 Followers</p></a></li>
+				<li style="margin-left: 10px;"><img src="imgs/fb.png"><a href="#"><p>2766 Likes</p></a></li>
+				<li><img src="imgs/youtube.png"><a href="#"><p>2766 Subscribers</p></a></li>
+			</ul>
+		</div>
+		
+		<div class="gallery-title">Tag could</div>
+
+		<ul class="tag-links clearfix">
+			<li>
+				<a href="#" style="background-color: rgb(242, 99, 5);">Lorem ipsum dolor</a>
+			</li>
+			<li>
+				<a href="#">Set dolor</a>
+			</li>
+			<li>
+				<a href="#">Excepteur sin</a>
+			</li>
+			<li>
+				<a href="#">Cupidatat</a>
+			</li>
+			<li>
+				<a href="#">Non proident</a>
+			</li>
+			<li>
+				<a href="#">Velit esse cillum</a>
+			</li>
+			<li>
+				<a href="#">Enim ad minim veni</a>
+			</li>
+			<li>
+				<a href="#">Minim veni</a>
+			</li>
+		</ul>
+
+		<ol class="tag-banners clearfix">
+			<li class="left">115X118</li>
+			<li class="right">115X118</li>
+			<li class="left">115X118</li>
+			<li class="right">115X118</li>	
+		</ol>
+	</div> <!--/ right-block off -->
+		
+	</div> <!--/ bot-container off -->
+
+	<div class="footer"> 
+		<ul class="footer-nav clearfix">
+			<li>
+				<h2>Navigation</h2>				
+					<a href="#" style="color: rgb(242, 99, 5);">home</a>
+					<a href="#">news</a>
+					<a href="#">featured</a>
+					<a href="#">gallery</a>
+					<a href="#">contacts</a>				
+			</li>
+			<li>
+				<h2>Meta</h2>				
+					<a href="#">site admin</a>
+					<a href="#">log out</a>
+					<a href="#">entries rss</a>
+					<a href="#">coments rss</a>
+					<a href="#">wordpress.org</a>				
+			</li>
+			<li>
+				<h2>Blogroll</h2>				
+					<a href="#">documentation</a>
+					<a href="#">plugins</a>
+					<a href="#">suggest ideas</a>
+					<a href="#">support forum</a>
+					<a href="#">themes</a>
+					<a href="#">wordpress blog</a>
+					<a href="#">wordpress planet</a>				
+			</li>
+			<li>
+				<h2>Categories</h2>				
+					<a href="#">coding</a>
+					<a href="#">css3</a>
+					<a href="#">html5</a>
+					<a href="#">web design</a>			
+			</li>
+			<li>
+				<h2>Recent Posts</h2>				
+					<a href="#">exceur sint ocacat...</a>
+					<a href="#">non pro sunt in...</a>
+					<a href="#">officia deserunt...</a>
+					<a href="#">lorem ips dolor sit...</a>
+			</li>
+			<li>
+				<h2>Archives</h2>				
+					<a href="#">july 2013</a>
+					<a href="#">may 2013</a>
+					<a href="#">april 2013</a>
+					<a href="#">march 2013</a>
+					<a href="#">february 2013</a>			
+			</li>
+		</ul>
+	</div> <!--/ footer off -->
+
+	<div class="copyright">
+		<p><span style="color: rgb(242, 99, 5);">press news</span> responsive magazine theme &copy; 2019. <span style="margin-left: 10px;">privacy policy</span><span style="float: right; font-family: comic sans ms; color: rgb(242, 99, 5);">R.Gunava</span></p>
+	</div>
+</body>
+</html>

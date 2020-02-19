@@ -1,0 +1,166 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.logo {
+  position: relative;
+  top: 5px;
+  width: 55px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.main-nav {
+  box-shadow: 1px 1px 1px rgb(240, 239, 239);
+}
+
+.nav-inner {
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.social li .fa {
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+.social li .fa:last-child {
+  margin-right: 0px;
+}
+
+.social li .fa:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nav-inner ul li {
+  padding: 25px;
+  border-bottom: 2px solid transparent;
+  color: rgb(119, 121, 137);
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.nav-inner ul li:hover {
+  border-bottom: 2px solid rgb(238, 68, 102);
+  cursor: pointer;
+  color: rgb(28, 31, 59);
+}
+
+.main-header {
+  box-shadow: 1px 1px 1px rgb(240, 239, 239);
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.main-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.header-left {
+  max-width: 370px;
+}
+
+.header-left h1 {
+  color: rgb(28, 31, 59);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.header-left p {
+  color: rgb(119, 121, 137);
+  margin: 25px 0px;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.header-left button {
+  background-color: rgb(238, 68, 102);
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 3px 3px 15px 3px;
+  transition: 0.3s;
+}
+
+.header-left button:hover {
+  background-color: rgb(230, 41, 78);
+  cursor: pointer;
+}
+
+.header-right img {
+  max-width: 600px;
+}
+
+.infrastruct {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.infra-left img {
+  max-width: 600px;
+}
+
+.infra-right {
+  max-width: 470px;
+}
+
+.infra-right h2 {
+  color: rgb(28, 31, 59);
+  font-size: 40px;
+  font-weight: 600;
+  margin: 25px 0px;
+}
+
+.infra-right p {
+  color: rgb(119, 121, 137);
+
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.infra-right ul li {
+  border: 1px solid rgb(230, 41, 78);
+  padding: 3px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.infra-right ul li:hover {
+  background-color: rgb(230, 41, 78);
+}
+
+.infra-right ul li:nth-child(1) {
+  width: 60px;
+}
+
+.infra-right ul li:nth-child(2) {
+  width: 20px;
+}
+
+.infra-right ul li:nth-child(3) {
+  background-color: rgb(230, 41, 78);
+}

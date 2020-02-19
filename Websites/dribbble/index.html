@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./imgs/dribble-logo.png" />
+
+    <title>Dribbble</title>
+  </head>
+  <body>
+    <nav class="header-nav flexbox">
+      <ul class="flexbox">
+        <li>
+          <a href="#" id="logo"><img src="imgs/logo.png" alt="dribble"/></a>
+        </li>
+        <li><a href="#" style="color: #fff; font-weight: 500">Shots</a></li>
+        <li><a href="#">Designer</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Hiring Designers?</a></li>
+      </ul>
+      <ul class="flexbox" style="align-items: center;">
+        <li>
+          <a href="#"><span>Sign in</span></a>
+        </li>
+        <li>
+          <a href="#" class="outlined"><span>Sign up</span></a>
+        </li>
+        <li>
+          <form action="#">
+            <i class="fas fa-search"></i>
+            <input
+              class="search-text"
+              type="search"
+              name="q"
+              placeholder="Search "
+              value
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <header class="main-header">
+      <div class="header-content flexbox">
+        <div class="header-left">
+          <h1>Discover the world's top designers & creatives</h1>
+          <p>
+            Dribbble is the leading destination to find & showcase creative work
+            and home to the world's best design professionals.
+          </p>
+          <button>Sign Up</button>
+        </div>
+        <div class="header-right">
+          <img
+            src="imgs/header-img.gif"
+            alt="head-img"
+            width="470"
+            height="352"
+          />
+        </div>
+      </div>
+      <!--/ header-content-End -->
+      <div class="header-bottom">
+        <p>Art by <span>Jerzy Wierzy</span> in Mazury, Poland</p>
+      </div>
+    </header>
+    <nav class="subnav">
+      <div class="subnav-inner flexbox flex-row items-center justify-between">
+        <!-- Example single secondary button -->
+        <div class="btn-group show">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Popular
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="#">Popular</a>
+            <a class="dropdown-item" href="#">Teams</a>
+            <a class="dropdown-item" href="#">Debuts</a>
+            <a class="dropdown-item" href="#">Recent</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Goods for Sale</a>
+          </div>
+        </div>
+
+        <div class="subnav-categories">
+          <ul class="flexbox">
+            <li><a href="#" id="active">All</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Illustration</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Print</a></li>
+            <li><a href="#">Product Design</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#">Web Design</a></li>
+          </ul>
+        </div>
+
+        <div class="btn-group show">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Filters
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main id="wrap-inner">
+      <div id="main" class="main-full">
+        <ol class="dribbles flexbox">
+          <li class="dribble">
+            <div class="dribble-box">
+              <img
+                src="imgs/img-1.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <img
+                src="imgs/img-2.jpg"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                src="imgs/vid-1.mp4"
+              ></video>
+              <img
+                src="imgs/img-3.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                src="imgs/vid-2.mp4"
+              ></video>
+              <img
+                src="imgs/img-4.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                src="imgs/vid-3.mp4"
+              ></video>
+              <img
+                src="imgs/img-5.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                muted
+                src="imgs/vid-4.mp4"
+              ></video>
+              <img
+                src="imgs/img-6.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                muted
+                src="imgs/vid-5.mp4"
+              ></video>
+              <img
+                src="imgs/img-7.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-6.mp4"
+              ></video>
+              <img
+                src="imgs/img-8.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                loop=""
+                muted
+                src="imgs/vid-7.mp4"
+              ></video>
+              <img
+                src="imgs/img-9.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-8.mp4"
+              ></video>
+              <img
+                src="imgs/img-10.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-9.mp4"
+              ></video>
+              <img
+                src="imgs/img-11.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-10.mp4"
+              ></video>
+              <img
+                src="imgs/img-12.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-11.mp4"
+              ></video>
+              <img
+                src="imgs/img-13.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-12.mp4"
+              ></video>
+              <img
+                src="imgs/img-14.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dribble">
+            <div class="dribble-box">
+              <video
+                class="dribble-video"
+                autoplay=""
+                muted
+                loop=""
+                src="imgs/vid-13.mp4"
+              ></video>
+              <img
+                src="imgs/img-15.png"
+                alt="img"
+                style="max-width: 100%"
+                ;
+                height="250"
+              />
+              <div class="dribble-overlay">
+                <div class="dribble-descr">
+                  <div class="dribble-descr-left">
+                    <p class="dribble-title">Figma Animation</p>
+                    <p class="dribble-time">October 03, 2019</p>
+                  </div>
+                  <div class="dribble-descr-right">
+                    <a href="#">Save</a>
+                    <a href="#">Like</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <div class="main-bot">
+          <button>Sign up to continue</button>
+          <button>or sign in</button>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div id="footer-inner">
+        <div class="group flexbox">
+          <div class="footer-left">
+            <p class="logo">
+              <a href="/"
+                ><img
+                  width="80"
+                  alt="dribbble"
+                  src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"/></a
+              ><br />Show and tell for designers
+            </p>
+            <p class="about">
+              What are you working on? Dribbble is a community of designers
+              sharing screenshots of their work, process, and projects.
+            </p>
+            <p class="follow">
+              <a href="#">
+                <img
+                  width="24"
+                  src="https://cdn.dribbble.com/assets/icon-team-dribbble-8706862cdb0afa7f43f9e0218b073515f0a2bef19780961d324ae4620ebe249b.png"
+                  alt="Icon team dribbble"
+                />
+              </a>
+              <a href="http://twitter.com/dribbble"
+                ><img
+                  width="24"
+                  src="https://cdn.dribbble.com/assets/icon-team-twitter-1fa6921d96b16e47f00ad0381ebbab59ba089c22b21f9bce783c9a4a077f40e9.png"
+                  alt="Icon team twitter"
+              /></a>
+              <a href="http://facebook.com/dribbble"
+                ><img
+                  width="24"
+                  src="https://cdn.dribbble.com/assets/icon-team-facebook-4d63851997b88eb903858057327d93df9f950a55c5104a3a19206f2005682ea3.png"
+                  alt="Icon team facebook"
+              /></a>
+              <a href="http://instagram.com/dribbble"
+                ><img
+                  width="24"
+                  src="https://cdn.dribbble.com/assets/icon-team-instagram-5dfdcd1478ea4a1c1e109b32adbd3878062aa1eb571da63ac379e0da1d2d5762.png"
+                  alt="Icon team instagram"
+              /></a>
+              <a href="/stories">
+                <img
+                  width="24"
+                  src="https://cdn.dribbble.com/assets/icon-team-blog-2705adcb7ee6522051e175d10683208f0fa0ad17daa15fdf3f36aca99c540312.png"
+                  alt="Icon team blog"
+                />
+              </a>
+            </p>
+          </div>
+          <div class="footer-middle">
+            <div class="extra-links flexbox">
+              <ul>
+                <h3><a href="#">Dribbble</a></h3>
+                <li><a id="f-home" href="/about">About</a></li>
+                <li><a href="https://help.dribbble.com">Help</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <li><a href="/terms">Terms</a></li>
+                <li><a href="/guidelines">Guidelines</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/shots?list=playoffs">Playoffs</a></li>
+              </ul>
+              <ul>
+                <li><a href="https://shop.dribbble.com/">Shop</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/branding">Media Kit</a></li>
+                <li><a href="/advertise">Advertise</a></li>
+                <li><a href="http://developer.dribbble.com">API</a></li>
+                <li><a href="/apps">Apps</a></li>
+                <li><a href="/places">Places</a></li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
